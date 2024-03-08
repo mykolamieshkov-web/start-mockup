@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+}
+@media (max-width: 1220px) {
+  .wrapper {
+    max-width: 1220px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    max-width: 500px;
+  }
+}
+@media (max-width: 393px) {
+  .wrapper {
+    max-width: 393px;
+  }
+}/*# sourceMappingURL=style.css.map */

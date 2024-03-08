@@ -1,0 +1,21 @@
+// пример миксина под резиновый текст:
+@mixin fluid-text($max: 48, $min: 16) {
+   font-size: clamp((#{$min}px, calc(#{math.div($max, 1440)} * 100vw), #{$max}px));
+}
+// миксин резинового блока: 
+@mixin responsive-block {
+width: 100%;
+max-width: 1440px;
+@include laptop {
+   max-width: $laptop;
+}
+@include tablet {
+   max-width:$tablet;
+}
+@include mobile {
+   max-width: $mobile;
+}
+@include mobile-s {
+   max-width: $mobile-s;
+}
+}

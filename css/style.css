@@ -65,11 +65,7 @@ input:clear, button:clear, textarea:clear {
 }
 
 button {
-  cursor: pointer;
-}
-button:focus-inner {
-  padding: 0;
-  border: 0;
+  all: initial;
 }
 
 /* Списки */
@@ -173,12 +169,12 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1920px;
   overflow-x: hidden;
 }
-@media (max-width: 1220px) {
+@media (max-width: 1440px) {
   .wrapper {
-    max-width: 1220px;
+    max-width: 1440px;
   }
 }
 @media (max-width: 768px) {

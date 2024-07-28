@@ -1,6 +1,13 @@
 body {
-font-family: 'Poppins-regular';
-font-size: 16px;
-color: #252525;
 
+font-size: 16px;
+
+
+}
+p, a {
+    @include fluid-text;
+ 
+}
+.content-wrapper {
+    @include content-container;
 }

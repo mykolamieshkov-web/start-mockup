@@ -6,6 +6,7 @@
    margin: 0;
    border: 0;
    box-sizing: border-box;
+   font-size: 16px !important;
  
    &:before,
    &:after {
@@ -20,6 +21,7 @@
  
  a {
    text-decoration: none;
+   color: inherit;
  
    &:focus,
    &:active {

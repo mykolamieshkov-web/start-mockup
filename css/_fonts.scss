@@ -1,17 +1,3 @@
 // fonts import here!
-// устаревший формат шрифтов;
 
-@font-face {
-   font-family: 'Poppins-regular';
-   src: url(./fonts/Poppins-Regular.ttf) format("truetype"); /* safari android ios*/
-   font-style: normal;
-   font-weight: 400;
 
-}
-// формат woff 2 для современных браузеров
-@font-face {
-   font-family: 'Poppins-regular';
-   src: url(./fonts/Poppins-Regular.woff2) format("woff2"); /* modern browsers */
-   font-style: normal;
-   font-weight: 400;
-}

@@ -5,6 +5,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  font-size: 16px !important;
 }
 *:before, *:after {
   box-sizing: border-box;
@@ -17,6 +18,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 a:focus, a:active {
   outline: none;
@@ -149,78 +151,44 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
-@font-face {
-  font-family: "Poppins-regular";
-  src: url(./fonts/Poppins-Regular.ttf) format("truetype"); /* safari android ios*/
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Poppins-regular";
-  src: url(./fonts/Poppins-Regular.woff2) format("woff2"); /* modern browsers */
-  font-style: normal;
-  font-weight: 400;
-}
-body {
+:root {
   font-size: 16px;
 }
 
-p, a {
-  font-size: clamp(1rem, 0.83vw, 1.2rem);
+body {
+  padding: 3.1rem 0;
 }
 
-.content-wrapper {
-  width: 100%;
-  max-width: calc(1920px - 3rem);
-  padding: 1.5rem;
-}
-@media (max-width: 1440px) {
-  .content-wrapper {
-    max-width: calc(1440px - 2.4rem);
-    padding: 1.2rem;
-  }
-}
-@media (max-width: 768px) {
-  .content-wrapper {
-    max-width: calc(768px - 2rem);
-    padding: 1rem;
-  }
-}
-@media (max-width: 500px) {
-  .content-wrapper {
-    max-width: calc(500px - 1rem);
-    padding: 0.5rem;
-  }
-}
-@media (max-width: 393px) {
-  .content-wrapper {
-    max-width: calc(393px - 0.6rem);
-    padding: 0.3rem;
-  }
+p, a {
+  font-size: clamp(16px, 0.83vw, 18px);
 }
 
 .wrapper {
-  width: 100%;
-  max-width: 1920px;
+  width: min(100% - 1rem, 1918px);
+  height: auto;
+  display: block;
+  margin: 1.6rem auto;
+  padding: 0 1rem;
+  background-color: #d9d9d9;
   overflow-x: hidden;
 }
 @media (max-width: 1440px) {
   .wrapper {
-    max-width: 1440px;
+    width: min(100% - 1rem, 1439px);
   }
 }
 @media (max-width: 768px) {
   .wrapper {
-    max-width: 768px;
+    width: min(100% - 1rem, 767px);
   }
 }
 @media (max-width: 500px) {
   .wrapper {
-    max-width: 500px;
+    width: min(100% - 1rem, 499px);
   }
 }
 @media (max-width: 393px) {
   .wrapper {
-    max-width: 393px;
+    width: min(100% - 1rem, 392px);
   }
 }/*# sourceMappingURL=style.css.map */

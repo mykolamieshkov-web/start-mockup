@@ -1,42 +1,27 @@
 // пример миксина под резиновый текст:
 @mixin fluid-text {
-   font-size: clamp( 1rem, 0.83vw, 1.2rem);
+   font-size: clamp( 16px, 0.83vw, 18px);
 }
 // миксин резинового блока: 
+// не забыть, что к нему применено display: block для центрирования
 @mixin responsive-block {
-width: 100%;
-max-width: 1920px;
-@include laptop {
-   max-width: $laptop;
-}
-@include tablet {
-   max-width:$tablet;
-}
-@include mobile {
-   max-width: $mobile;
-}
-@include mobile-s {
-   max-width: $mobile-s;
-}
-}
-@mixin content-container {
-   width: 100%;
-   max-width: calc(1920px - 1.5rem * 2);
-   padding: 1.5rem;
+   width: min(100% - 1rem, 1918px);
+   height: auto;
+   display: block; 
+   margin:1.6rem auto;
+   padding: 0 1rem;
+   background-color: #d9d9d9;
    @include laptop {
-      max-width: calc($laptop - 1.2rem * 2);
-      padding: 1.2rem;
+      width: min(100% - 1rem, 1439px);
    }
    @include tablet {
-      max-width: calc($tablet - 1rem * 2);
-      padding: 1rem;
+      width: min(100% - 1rem, 767px);
    }
    @include mobile {
-      max-width: calc($mobile - 0.5rem * 2);
-      padding: 0.5rem;
+      width: min(100% - 1rem, 499px);
    }
-   @include mobile-s {
-      max-width: calc($mobile-s - 0.3rem * 2);
-      padding: 0.3rem;
-   }
+@include mobile-s {
+   width: min(100% - 1rem, 392px);
+
+}
 }

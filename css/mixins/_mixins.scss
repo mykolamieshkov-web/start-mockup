@@ -2,26 +2,24 @@
 @mixin fluid-text {
    font-size: clamp( 16px, 0.83vw, 18px);
 }
-// миксин резинового блока: 
-// не забыть, что к нему применено display: block для центрирования
-@mixin responsive-block {
-   width: min(100% - 1rem, 1918px);
-   height: auto;
-   display: block; 
-   margin:1.6rem auto;
-   padding: 0 1rem;
-   background-color: #d9d9d9;
-   @include laptop {
-      width: min(100% - 1rem, 1439px);
-   }
-   @include tablet {
-      width: min(100% - 1rem, 767px);
-   }
-   @include mobile {
-      width: min(100% - 1rem, 499px);
-   }
-@include mobile-s {
-   width: min(100% - 1rem, 392px);
 
+ 
+ @mixin fluid-h1 {
+   font-size: clamp(41.88px, 2.18vw, 45px); /* H1: рассчитано по золотому сечению */
+ }
+ 
+ @mixin fluid-title {
+   font-size: clamp(25.89px, 1.35vw, 28px); /* Заголовки */
+ }
+// миксин ограничиющего контейнера: 
+@mixin container {
+   width: min(100% - 1.1rem, 100vw);
+   margin: 12px;
+   
 }
+// mixin отзывчивого  блока 
+@mixin responsive-block {
+   width: min( 100%, 100vw);
+   height: auto;
+   padding: 1rem 1.1rem;
 }

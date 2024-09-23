@@ -1,0 +1,13 @@
+header.header {
+    @include responsive-block;
+    background-color: red;
+    height: auto;
+    &__content {
+        @include container;
+        p {
+            text-align: center;
+            text-wrap: balance;
+        }
+    }
+ 
+}

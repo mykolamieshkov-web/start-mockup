@@ -1,9 +1,31 @@
-body {
-
-padding:  3.1rem 0;
+body, html {
+ scroll-behavior: smooth;
+width: 100%;
+height: auto;
+min-height: 100%;
 
 }
-p, a {
+// параграфы и ссылки с резиновым текстом
+a, p {
     @include fluid-text;
- 
 }
+h1 {
+    @include fluid-h1;
+}
+h2, h3 {
+    @include fluid-title;
+}
+// скрываем тескт-подсказку для кнопок
+
+@mixin visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+  }

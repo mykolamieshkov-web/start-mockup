@@ -1,7 +1,6 @@
 .header {
     @include responsive-block;
-    background-color: red;
-    height: auto;
+
         p {
             text-align: center;
             text-wrap: balance;

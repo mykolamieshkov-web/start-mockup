@@ -20,3 +20,9 @@ h2, h3 {
 .visually-hidden {
  @include visually-hidden; 
   }
+// ограничивающий контейнер: 
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}

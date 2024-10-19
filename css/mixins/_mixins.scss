@@ -14,19 +14,8 @@
    font-size: clamp(25.89px, 1.35vw, 28px); /* Заголовки */
     line-height: 1.2;
  }
-// миксин ограничиющего контейнера: 
-@mixin container {
-   width: min(100% - 1.1rem, 100vw);
-   margin: 10px;
-   padding: 16px;
-   
-}
-// mixin отзывчивого  блока 
-@mixin responsive-block {
-   width: min( 100%, 100vw);
-   height: auto;
-   padding: 1rem 1.1rem;
-}
+
+
 @mixin visually-hidden {
  position: absolute !important;
   width: 1px !important;

@@ -21,7 +21,7 @@
  
 a {
   text-decoration: unset;
-  color: unset;
+  color: inherit;
 }
 img {
   max-width: 100%;
@@ -30,7 +30,4 @@ img {
 button {
   all: initial;
 }
-div, nav, aside, input, form, header, main, footer {
-  display: flex;  //Каждый контейнер флекс-элемент
-  
-}
+
